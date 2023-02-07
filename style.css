@@ -1,0 +1,127 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+.container {
+    width: 500px;
+    margin: 20px auto;
+}
+@media (max-width: 520px) {
+    .container {
+        width: auto;
+    }
+}
+.form {
+    background-color: #eee;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    border-radius: 6px;
+}
+.form .input {
+    padding: 10px;
+    flex: 1;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+}
+.form .input:focus {
+    outline: none;
+}
+.form .add {
+    margin-left: 10px;
+    padding: 10px;
+    background-color: #f44336;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: 0.2s;
+}
+.form .add:hover {
+    background-color: #c5392e;
+    transition: 0.2s;
+}
+.tasks {
+    background-color: #eee;
+    margin-top: 20px;
+    padding: 20px;
+    border-radius: 6px;
+    text-align: center;
+    color: #6e6666;
+    user-select: none;
+}
+.tasks .task {
+    border: 1px solid #ccc;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    background-color: white;
+    cursor: pointer;
+    transition: 0.2s;
+    border-radius: 6px;
+    color: black;
+}
+.tasks .task:not(:last-child) {
+    margin-bottom: 15px;
+}
+.tasks .task:hover {
+    background-color: #f7f7f7;
+}
+.tasks .task.done {
+    opacity: 0.5;
+}
+.tasks .task .del {
+    background-color: red;
+    font-size: 10px;
+    padding: 2px 6px;
+    color: white;
+    border-radius: 4px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.2s;
+    letter-spacing: 0.5px;
+    user-select: none;
+}
+.tasks .task .del:hover {
+    background-color: #c5392e;
+    transition: 0.2s;
+}
+.tasks .remote {
+    /* margin-bottom: 15px; */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 5px 15px;
+}
+.tasks .remote .comp_all {
+    padding: 6px;
+    background-color: #55b15b;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: 0.2s;
+    font-size: 13px;
+    letter-spacing: 0.5px;
+    user-select: none;
+}
+.tasks .remote .del_all {
+    padding: 6px;
+    background-color: #f44336;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: 0.2s;
+    font-size: 13px;
+    letter-spacing: 0.5px;
+    user-select: none;
+}
+.tasks .remote .comp_all:hover {
+    background-color: #3c8d41;
+    transform: 0.2s;
+}
+.tasks .remote .del_all:hover {
+    background-color: #c5392e;
+    transition: 0.2s;
+}
