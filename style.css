@@ -60,6 +60,7 @@ body {
     transition: 0.2s;
     border-radius: 6px;
     color: black;
+    user-select: text;
 }
 .tasks .task:not(:last-child) {
     margin-bottom: 15px;
